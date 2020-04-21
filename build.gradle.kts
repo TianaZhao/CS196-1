@@ -10,6 +10,14 @@ repositories {
     mavenCentral()
 }
 
+repositories {
+    google()
+}
+
+repositories {
+    jcenter()
+}
+
 dependencies {
     implementation(kotlin("stdlib-jdk8"))
 
@@ -17,6 +25,8 @@ dependencies {
     implementation("io.ktor:ktor-server-core:$ktorVersion")
     implementation("io.ktor:ktor-server-netty:$ktorVersion")
     implementation("io.ktor:ktor-gson:$ktorVersion")
+    implementation ("io.ktor:ktor-html-builder:$ktorVersion")
+
 
     testImplementation("io.kotlintest:kotlintest-runner-junit5:3.3.0")
     testImplementation("io.ktor:ktor-server-test-host:$ktorVersion")
